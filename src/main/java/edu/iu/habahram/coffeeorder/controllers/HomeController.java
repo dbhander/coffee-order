@@ -1,9 +1,11 @@
 package edu.iu.habahram.coffeeorder.controllers;
 
 import edu.iu.habahram.coffeeorder.repository.OrderRepository;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin
 @RestController
 public class HomeController {
 
