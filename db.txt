@@ -1,0 +1,32 @@
+631742201, 1.64, Espresso, Mocha
+394069917, 2.50, Decaf, Milk, Mocha, Soy, Whip
+566778087, 3.21, Dark roast, Milk, Mocha, Soy, Whip
+731066878, 1.34, Espresso
+1823993744, 1.28, Decaf
+1704801728, 1.99, Dark roast
+1994376150, 1.55, Decaf, Soy
+178153947, 2.39, Dark roast, Milk
+1372717459, 1.91, Espresso, Mocha, Soy
+1143507009, 2.87, House Blend, Milk, Mocha, Soy, Whip
+886410595, 2.32, House Blend, Milk, Soy
+1909661100, 1.90, House Blend, Whip
+513033618, 1.93, Decaf, Milk, Whip
+383300760, 1.65, House Blend
+622336353, 2.69, Dark roast, Milk, Mocha
+1399188299, 2.56, Espresso, Milk, Mocha, Soy, Whip
+12152354, 1.64, Espresso, Mocha
+437304631, 2.50, Decaf, Milk, Mocha, Soy, Whip
+732585401, 3.21, Dark roast, Milk, Mocha, Soy, Whip
+189032088, 1.34, Espresso
+1118450401, 1.28, Decaf
+8660299, 1.99, Dark roast
+562424227, 1.55, Decaf, Soy
+1071292847, 2.39, Dark roast, Milk
+783376235, 1.91, Espresso, Mocha, Soy
+1754123482, 2.87, House Blend, Milk, Mocha, Soy, Whip
+281872829, 2.32, House Blend, Milk, Soy
+1976376275, 1.90, House Blend, Whip
+1706407318, 1.93, Decaf, Milk, Whip
+267787227, 1.65, House Blend
+1982300546, 2.69, Dark roast, Milk, Mocha
+448508540, 2.56, Espresso, Milk, Mocha, Soy, Whip

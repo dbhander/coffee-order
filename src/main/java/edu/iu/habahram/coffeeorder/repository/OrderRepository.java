@@ -24,32 +24,31 @@ public class OrderRepository {
         return uniqueId;
     }
     public Receipt add(OrderData order) throws Exception {
-        Beverage beverage = null;
+        Beverage beverage;
         switch (order.beverage().toLowerCase()) {
-            case "dark roast":
-                beverage = new DarkRoast();
-                break;
+            case "dark roast" -> beverage = new DarkRoast();
+            case "espresso" -> beverage = new Espresso();
+            case "decaf" -> beverage = new Decaf();
+            case "house blend" -> beverage = new HouseBlend();
+            default -> throw new Exception("Beverage type '%s' is not valid!".formatted(order.beverage()));
         }
-        if (beverage == null) {
-            throw new Exception("Beverage type '%s' is not valid!".formatted(order.beverage()));
-        }
-        for(String condiment : order.condiments()) {
+
+        for (String condiment : order.condiments()) {
             switch (condiment.toLowerCase()) {
-                case "milk":
-                   beverage = new Milk(beverage);
-                   break;
-                case "mocha":
-                    beverage = new Mocha(beverage);
-                    break;
-                default:
-                    throw new Exception("Condiment type '%s' is not valid".formatted(condiment));
+                case "milk" -> beverage = new Milk(beverage);
+                case "mocha" -> beverage = new Mocha(beverage);
+                case "soy" -> beverage = new Soy(beverage);
+                case "whip" -> beverage = new Whip(beverage);
+                default -> throw new Exception("Condiment type '%s' is not valid!".formatted(condiment));
             }
         }
-        int id=generateUniqueId();
-        Receipt receipt = new Receipt(id,beverage.getDescription(), beverage.cost());
+
+        int id = generateUniqueId();
+        Receipt receipt = new Receipt(id, beverage.getDescription(), beverage.cost());
         saveDataToFile(receipt);
         return receipt;
     }
+
 
     private void saveDataToFile(Receipt receipt) throws IOException {
         try(FileWriter writer=new FileWriter("db.txt",true)){
